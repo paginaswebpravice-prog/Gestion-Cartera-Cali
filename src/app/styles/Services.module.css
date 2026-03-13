@@ -21,7 +21,7 @@
   display: block;
   width: 90px;
   height: 4px;
-  background-color: #004a80;
+  background-color: #f7c600;
   margin: 1.1rem auto 0;
   border-radius: 4px;
 }
@@ -59,7 +59,7 @@
 .card {
   padding: 2.4rem 2.2rem;
 
-  border-left: 7px solid #004a80;
+  border-left: 7px solid #f7c600;
   border-radius: 10px;
 
   color: var(--c-black);

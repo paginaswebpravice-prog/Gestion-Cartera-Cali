@@ -11,7 +11,7 @@
   padding: 6rem 3rem;
   gap: 4rem;
 
-  background-color: #f4f6f8;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f9fc 100%);
 
   max-width: 1200px;
   margin: 0 auto;
@@ -30,37 +30,64 @@
   color: #004a80;
   margin-bottom: 2rem;
   line-height: 1.2;
+  font-weight: 600;
+  position: relative;
+}
+
+/* línea decorativa elegante */
+
+.text h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, #f7c600, #c4911a);
+  border-radius: 4px;
 }
 
 .text p {
   margin-top: 1.6rem;
   line-height: 1.8;
   font-size: 1.1rem;
-  color: #555555;
+  color: #444;
 }
 
 /* =========================
-   IMAGE CONTAINER (CLAVE)
+   IMAGE CONTAINER
 ========================= */
 
 .imagePlaceholder {
-  position: relative; /* 🔑 OBLIGATORIO PARA Image fill */
+  position: relative;
   width: 100%;
   max-width: 420px;
 
-  aspect-ratio: 1 / 1; /* 🔑 mantiene proporción */
+  aspect-ratio: 1 / 1;
   margin: 0 auto;
 
   background: #ffffff;
-  border-radius: 16px;
-  overflow: hidden; /* 🔑 evita desbordes */
 
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 18px;
+  overflow: hidden;
+
+  border: 1px solid rgba(0, 74, 128, 0.08);
+
+  box-shadow: 0 16px 40px rgba(0, 74, 128, 0.12);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.imagePlaceholder:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 74, 128, 0.18);
 }
 
 /* Imagen */
+
 .image {
-  object-fit: contain; /* logos NO se recortan */
+  object-fit: contain;
 }
 
 /* =========================
@@ -68,18 +95,28 @@
 ========================= */
 
 .featuredImage {
-  position: relative; /* 🔑 OBLIGATORIO */
+  position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
 
   border-radius: 20px;
   overflow: hidden;
 
-  background: #e5e7eb;
+  background: #f3f6fa;
+
+  border: 1px solid rgba(0, 74, 128, 0.08);
+
+  box-shadow: 0 14px 36px rgba(0, 74, 128, 0.1);
+
+  transition: transform 0.3s ease;
+}
+
+.featuredImage:hover {
+  transform: translateY(-4px);
 }
 
 .featuredImage .image {
-  object-fit: cover; /* 🔑 imágenes editoriales */
+  object-fit: cover;
 }
 
 /* =========================
@@ -107,6 +144,11 @@
 
   .text {
     margin: 0 auto;
+  }
+
+  .text h2::after {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .imagePlaceholder {
