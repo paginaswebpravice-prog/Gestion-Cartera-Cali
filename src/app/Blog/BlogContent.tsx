@@ -125,7 +125,7 @@ export default function BlogContent() {
             transition={{ duration: 0.4, delay: index * 0.05 }}
             viewport={{ once: true }}
           >
-            <Link href={`/blog/${post.slug}`} className={styles.card}>
+            <Link href={`/Blog/${post.slug}`} className={styles.card}>
               <h2 className={styles.cardTitle}>{post.title}</h2>
               <p className={styles.cardDesc}>{post.description}</p>
               <span className={styles.link}>Leer artículo →</span>
