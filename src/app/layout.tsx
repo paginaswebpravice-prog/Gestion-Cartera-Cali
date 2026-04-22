@@ -5,6 +5,7 @@ import "./globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Footer from "./components/Footer";
+import Navbar from "./components/NavBar";
 
 config.autoAddCss = false;
 
@@ -59,7 +60,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
