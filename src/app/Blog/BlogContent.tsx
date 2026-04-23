@@ -31,18 +31,16 @@ const posts = [
   },
   {
     title: "Estrategias de cobranza efectiva en Cali",
-    slug: "estrategias-cobranza-cali",
+    slug: "estrategias-recuperacion-cartera-cali",
     description:
       "Técnicas profesionales para mejorar la recuperación de cartera empresarial.",
   },
   {
     title: "Cómo afecta la cartera vencida a tu empresa",
-    slug: "impacto-cartera-vencida",
+    slug: "como-afecta-cartera-vencida-cali",
     description:
       "El impacto financiero de la mora en empresas de Cali y cómo solucionarlo.",
   },
-
-  /* ===================== NUEVOS ARTÍCULOS ===================== */
 
   {
     title: "Cobro prejurídico en Cali: cómo funciona y cuándo usarlo",
