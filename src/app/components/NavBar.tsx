@@ -54,7 +54,7 @@ export default function Navbar() {
           {dropdown === "problemas" && (
             <div className={styles.dropdownMenu}>
               <Link href="/Problemas/clientes-no-pagan-cali">
-                Clientes no pagar
+                Clientes no pagan
               </Link>
               <Link href="/Problemas/cartera-vencida-cali">
                 Cartera vencida
@@ -116,17 +116,17 @@ export default function Navbar() {
             Servicios
           </Link>
 
-          <Link href="/problemas/clientes-no-pagan-cali">
+          <Link href="/Problemas/clientes-no-pagan-cali">
             Clientes no pagan
           </Link>
 
-          <Link href="/problemas/cartera-vencida-cali">Cartera vencida</Link>
+          <Link href="/Problemas/cartera-vencida-cali">Cartera vencida</Link>
 
-          <Link href="/problemas/cobrar-deuda-urgente-cali">Cobro urgente</Link>
+          <Link href="/Problemas/cobrar-deuda-urgente-cali">Cobro urgente</Link>
 
-          <Link href="/sectores/cobranza-pymes-cali">Pymes</Link>
+          <Link href="/Sectores/cobranza-pymes-cali">Pymes</Link>
 
-          <Link href="/sectores/cobranza-inmobiliarias-cali">
+          <Link href="/Sectores/cobranza-inmobiliarias-cali">
             Inmobiliarias
           </Link>
 

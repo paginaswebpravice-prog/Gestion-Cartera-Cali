@@ -14,14 +14,14 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://gestion-cartera-cali-pravice.vercel.app/problemas/clientes-no-pagan-cali",
+      "https://gestion-cartera-cali-pravice.vercel.app/Problemas/clientes-no-pagan-cali",
   },
   openGraph: {
     title:
       "¿Clientes no pagan en Cali? Solución rápida para recuperar tu dinero",
     description:
       "Recupera cartera vencida en Cali con estrategias legales efectivas.",
-    url: "https://gestion-cartera-cali-pravice.vercel.app/problemas/clientes-no-pagan-cali",
+    url: "https://gestion-cartera-cali-pravice.vercel.app/Problemas/clientes-no-pagan-cali",
     siteName: "Pravice",
     locale: "es_CO",
     type: "website",

@@ -11,9 +11,9 @@ export default function ClientesNoPaganContent() {
         <h1>¿Tus clientes no pagan en Cali?</h1>
 
         <p>
-          Recupera tu dinero de forma rápida, legal y sin afectar la relación
-          comercial. Aplicamos estrategias de cobranza efectivas adaptadas a
-          empresas en Cali.
+          Recupera el dinero de clientes morosos de forma legal, estratégica y
+          sin afectar la relación comercial. Implementamos procesos de cobranza
+          efectivos para empresas en Cali que necesitan resultados reales.
         </p>
 
         <Link href="/contacto" className={styles.button}>
@@ -23,100 +23,222 @@ export default function ClientesNoPaganContent() {
         <div className={styles.badgeRow}>
           <span>⚖️ Cobro legal</span>
           <span>💼 Empresas</span>
-          <span>📈 Mejora flujo de caja</span>
+          <span>📈 Flujo de caja</span>
         </div>
       </div>
 
-      {/* PROBLEMA */}
+      {/* INTRO SEO */}
+      <div className={styles.block}>
+        <h2>Qué hacer cuando un cliente no paga en Cali</h2>
+
+        <p>
+          Uno de los problemas más frecuentes en empresas de Cali es la falta de
+          pago por parte de clientes. Ya sea por incumplimiento, falta de
+          liquidez o mala gestión, las deudas sin cobrar afectan directamente la
+          estabilidad del negocio.
+        </p>
+
+        <p>
+          Saber cómo actuar frente a un cliente moroso puede marcar la
+          diferencia entre recuperar el dinero o perderlo definitivamente.
+        </p>
+
+        <div className={styles.highlight}>
+          💡 No cobrar a tiempo es uno de los errores más costosos en cualquier
+          empresa.
+        </div>
+      </div>
+
+      {/* CAUSAS */}
       <div className={styles.block}>
         <h2>¿Por qué los clientes dejan de pagar?</h2>
 
         <p>
-          En Cali, muchas empresas enfrentan problemas de morosidad por falta de
-          control, acuerdos informales o simplemente incumplimiento del cliente.
+          Entender por qué un cliente no paga permite definir una estrategia de
+          cobranza más efectiva y aumentar las probabilidades de recuperación.
         </p>
 
         <ul>
-          <li>Falta de seguimiento en pagos</li>
-          <li>Clientes con problemas financieros</li>
-          <li>Acuerdos verbales sin respaldo legal</li>
-          <li>Ausencia de procesos de cobranza estructurados</li>
+          <li>Falta de seguimiento después de la venta</li>
+          <li>Problemas financieros del cliente</li>
+          <li>Prioridad a otros pagos</li>
+          <li>Acuerdos informales sin respaldo legal</li>
+          <li>Errores en facturación o comunicación</li>
         </ul>
 
-        <div className={styles.highlight}>
-          ⚠️ Entre más tiempo pasa, más difícil es recuperar la deuda.
+        <p>
+          En muchos casos, el cliente no paga porque no percibe consecuencias
+          reales o urgencia en la obligación.
+        </p>
+      </div>
+
+      {/* TIPOS DE CLIENTES */}
+      <div className={styles.block}>
+        <h2>Tipos de clientes morosos (y cómo actuar)</h2>
+
+        <p>
+          No todos los deudores son iguales. Identificar el tipo de cliente
+          ayuda a definir la mejor estrategia de cobro.
+        </p>
+
+        <div className={styles.step}>
+          <h3>Cliente olvidadizo</h3>
+          <p>
+            No paga por descuido. Se recupera fácilmente con recordatorios
+            oportunos.
+          </p>
+        </div>
+
+        <div className={styles.step}>
+          <h3>Cliente con problemas financieros</h3>
+          <p>Necesita negociación y acuerdos de pago estructurados.</p>
+        </div>
+
+        <div className={styles.step}>
+          <h3>Cliente evasivo</h3>
+          <p>
+            Evita responder. Requiere presión formal y seguimiento constante.
+          </p>
+        </div>
+
+        <div className={styles.step}>
+          <h3>Cliente que no quiere pagar</h3>
+          <p>Requiere escalamiento legal para lograr recuperación.</p>
         </div>
       </div>
 
       {/* IMPACTO */}
       <div className={styles.block}>
-        <h2>Cómo afecta a tu empresa que no te paguen</h2>
+        <h2>Cómo impacta la falta de pago en tu empresa</h2>
 
         <p>
-          La falta de pago no solo afecta un ingreso puntual, sino que impacta
-          directamente la estabilidad financiera de tu negocio.
+          Cuando un cliente no paga, el problema no es solo la deuda, sino el
+          efecto acumulativo que genera en toda la operación.
         </p>
 
         <ul>
-          <li>Disminución del flujo de caja</li>
-          <li>Dificultad para pagar proveedores</li>
-          <li>Pérdida de rentabilidad</li>
-          <li>Riesgo de cierre o endeudamiento</li>
+          <li>Disminuye el flujo de caja</li>
+          <li>Afecta el pago a proveedores</li>
+          <li>Reduce la capacidad de inversión</li>
+          <li>Genera estrés financiero</li>
+          <li>Aumenta el riesgo de endeudamiento</li>
         </ul>
+
+        <div className={styles.highlight}>
+          ⚠️ Un cliente que no paga puede afectar toda tu operación si no se
+          gestiona a tiempo.
+        </div>
+      </div>
+
+      {/* ERRORES */}
+      <div className={styles.block}>
+        <h2>Errores comunes al intentar cobrar</h2>
+
+        <ul>
+          <li>Esperar demasiado para iniciar cobranza</li>
+          <li>Hacer acuerdos verbales</li>
+          <li>No hacer seguimiento constante</li>
+          <li>No documentar la deuda correctamente</li>
+          <li>Evitar el conflicto y no escalar el caso</li>
+        </ul>
+
+        <p>
+          Estos errores reducen significativamente las probabilidades de
+          recuperación.
+        </p>
       </div>
 
       {/* SOLUCIÓN */}
       <div className={styles.block}>
         <h2>Cómo recuperar deudas de clientes morosos en Cali</h2>
 
+        <p>
+          La clave está en aplicar un proceso estructurado que combine presión,
+          comunicación y respaldo legal.
+        </p>
+
         <div className={styles.step}>
           <h3>1. Contacto estratégico</h3>
           <p>
-            Se inicia con una comunicación profesional que motive el pago sin
-            generar conflicto.
+            Se inicia con una comunicación profesional que genera compromiso de
+            pago.
           </p>
         </div>
 
         <div className={styles.step}>
           <h3>2. Cobro prejurídico</h3>
           <p>
-            Se envían notificaciones formales que aumentan la presión legal sin
+            Se envían comunicaciones formales que aumentan la presión sin
             necesidad de demanda.
           </p>
         </div>
 
         <div className={styles.step}>
-          <h3>3. Acuerdos de pago</h3>
+          <h3>3. Negociación</h3>
           <p>
-            Se negocian planes estructurados que faciliten la recuperación del
-            dinero.
+            Se establecen acuerdos de pago claros, medibles y con respaldo
+            legal.
           </p>
         </div>
 
         <div className={styles.step}>
           <h3>4. Cobro jurídico</h3>
           <p>
-            Si el cliente no responde, se inicia un proceso legal para exigir el
+            Si el cliente no responde, se inicia proceso legal para exigir el
             pago.
           </p>
         </div>
       </div>
 
-      {/* DIFERENCIAL */}
+      {/* CUÁNDO ACTUAR */}
       <div className={styles.block}>
-        <h2>¿Por qué elegir un servicio profesional de cobranza?</h2>
+        <h2>¿Cuándo debes actuar?</h2>
 
         <p>
-          Intentar cobrar sin experiencia puede hacerte perder tiempo y dinero.
-          Un equipo especializado aumenta significativamente las probabilidades
-          de recuperación.
+          El momento de actuar es clave en la recuperación de cartera. Muchas
+          empresas pierden dinero por esperar demasiado.
         </p>
 
         <ul>
-          <li>Mayor tasa de recuperación</li>
+          <li>Después de 30 días de mora</li>
+          <li>Cuando el cliente deja de responder</li>
+          <li>Cuando incumple acuerdos</li>
+          <li>Cuando la deuda afecta tu operación</li>
+        </ul>
+
+        <div className={styles.highlight}>
+          ⚠️ Cada día sin acción reduce tus probabilidades de recuperar el
+          dinero.
+        </div>
+      </div>
+
+      {/* BENEFICIOS */}
+      <div className={styles.block}>
+        <h2>Beneficios de una cobranza profesional</h2>
+
+        <ul>
+          <li>Mayor recuperación de deudas</li>
+          <li>Mejor flujo de caja</li>
+          <li>Menor desgaste operativo</li>
           <li>Procesos legales seguros</li>
-          <li>Ahorro de tiempo operativo</li>
-          <li>Estrategias personalizadas</li>
+          <li>Resultados medibles</li>
+        </ul>
+      </div>
+
+      {/* DIFERENCIAL */}
+      <div className={styles.block}>
+        <h2>¿Por qué elegir expertos en cobranza?</h2>
+
+        <p>
+          Un equipo especializado sabe cómo manejar clientes morosos, aplicar
+          presión adecuada y escalar legalmente cuando es necesario.
+        </p>
+
+        <ul>
+          <li>Estrategias adaptadas a cada caso</li>
+          <li>Mayor tasa de éxito</li>
+          <li>Comunicación profesional</li>
+          <li>Enfoque en resultados</li>
         </ul>
       </div>
 
@@ -125,11 +247,16 @@ export default function ClientesNoPaganContent() {
         <h2>Recupera el dinero que te deben hoy</h2>
 
         <p>
-          No dejes que los clientes morosos afecten tu empresa. Actúa ahora y
-          mejora tu flujo de caja con apoyo profesional.
+          No dejes que los clientes morosos afecten tu empresa. Actuar a tiempo
+          es la clave para recuperar tu dinero.
         </p>
 
-        <Link href="/contacto" className={styles.button}>
+        <Link
+          href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+          className={styles.button}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Solicitar asesoría inmediata
         </Link>
       </div>
