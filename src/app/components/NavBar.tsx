@@ -81,6 +81,12 @@ export default function Navbar() {
                 Inmobiliarias
               </Link>
               <Link href="/Sectores/cobranza-clinicas-cali">Clínicas</Link>
+              <Link href="/Sectores/cobranza-constructoras-cali">
+                Constructoras
+              </Link>
+              <Link href="/Sectores/cobranza-servicios-profesionales-cali">
+                Servicios profesionales
+              </Link>
             </div>
           )}
         </li>
