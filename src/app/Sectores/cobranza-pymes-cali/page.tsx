@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://gestion-cartera-cali-pravice.vercel.app/sectores/cobranza-pymes-cali",
+      "https://gestion-cartera-cali-pravice.vercel.app/Sectores/cobranza-pymes-cali",
   },
   openGraph: {
     title: "Cobranza para pymes en Cali: recupera tu cartera vencida",
     description:
       "Soluciones efectivas para recuperar deudas en pequeñas y medianas empresas.",
-    url: "https://gestion-cartera-cali-pravice.vercel.app/sectores/cobranza-pymes-cali",
+    url: "https://gestion-cartera-cali-pravice.vercel.app/Sectores/cobranza-pymes-cali",
     siteName: "Pravice",
     locale: "es_CO",
     type: "website",

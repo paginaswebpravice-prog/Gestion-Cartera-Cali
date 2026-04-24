@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://gestion-cartera-cali-pravice.vercel.app/sectores/cobranza-clinicas-cali",
+      "https://gestion-cartera-cali-pravice.vercel.app/Sectores/cobranza-clinicas-cali",
   },
   openGraph: {
     title: "Cobranza para clínicas en Cali: recupera cartera del sector salud",
     description:
       "Especialistas en recuperación de cuentas médicas y cartera vencida en clínicas.",
-    url: "https://gestion-cartera-cali-pravice.vercel.app/sectores/cobranza-clinicas-cali",
+    url: "https://gestion-cartera-cali-pravice.vercel.app/Sectores/cobranza-clinicas-cali",
     siteName: "Pravice",
     locale: "es_CO",
     type: "website",

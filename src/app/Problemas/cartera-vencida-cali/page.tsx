@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://gestion-cartera-cali-pravice.vercel.app/problemas/cartera-vencida-cali",
+      "https://gestion-cartera-cali-pravice.vercel.app/Problemas/cartera-vencida-cali",
   },
 
   robots: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Cartera vencida en Cali",
     description:
       "Soluciones efectivas para recuperar cartera vencida y mejorar el flujo de caja.",
-    url: `${baseUrl}/problemas/cartera-vencida-cali`,
+    url: `${baseUrl}/Problemas/cartera-vencida-cali`,
     siteName: "Pravice Gestión de Cartera",
     type: "website",
     locale: "es_CO",

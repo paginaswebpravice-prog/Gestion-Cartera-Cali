@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://gestion-cartera-cali-pravice.vercel.app/sectores/cobranza-inmobiliarias-cali",
+      "https://gestion-cartera-cali-pravice.vercel.app/Sectores/cobranza-inmobiliarias-cali",
   },
   openGraph: {
     title: "Cobranza para inmobiliarias en Cali: recupera arriendos vencidos",
     description:
       "Especialistas en recuperación de cartera inmobiliaria y cobro de arriendos.",
-    url: "https://gestion-cartera-cali-pravice.vercel.app/sectores/cobranza-inmobiliarias-cali",
+    url: "https://gestion-cartera-cali-pravice.vercel.app/Sectores/cobranza-inmobiliarias-cali",
     siteName: "Pravice",
     locale: "es_CO",
     type: "website",

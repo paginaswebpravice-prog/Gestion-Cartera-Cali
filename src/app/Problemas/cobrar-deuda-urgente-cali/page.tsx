@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://gestion-cartera-cali-pravice.vercel.app/problemas/cobrar-deuda-urgente-cali",
+      "https://gestion-cartera-cali-pravice.vercel.app/Problemas/cobrar-deuda-urgente-cali",
   },
   openGraph: {
     title: "¿Necesitas cobrar una deuda urgente en Cali? Solución inmediata",
     description:
       "Recupera tu dinero hoy con estrategias profesionales de cobranza.",
-    url: "https://gestion-cartera-cali-pravice.vercel.app/problemas/cobrar-deuda-urgente-cali",
+    url: "https://gestion-cartera-cali-pravice.vercel.app/Problemas/cobrar-deuda-urgente-cali",
     siteName: "Pravice",
     locale: "es_CO",
     type: "website",
