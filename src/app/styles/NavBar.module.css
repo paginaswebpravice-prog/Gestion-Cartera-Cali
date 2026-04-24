@@ -52,16 +52,79 @@
   padding: 0;
 }
 
-.center a {
+.center li {
+  position: relative;
+}
+
+.center a,
+.center span {
   text-decoration: none;
   color: #004a80;
   font-weight: 500;
   font-size: 0.95rem;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
-.center a:hover {
+.center a:hover,
+.center span:hover {
   color: #5eb3e4;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 120%;
+  left: 0;
+
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  min-width: 220px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+
+  transition: all 0.25s ease;
+  z-index: 100;
+}
+
+/* Mostrar dropdown */
+.dropdown:hover .dropdownMenu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Links dropdown */
+.dropdownMenu a {
+  font-size: 14px;
+  color: #374151;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.dropdownMenu a:hover {
+  background: #f3f6fb;
+  color: #0b4f8a;
+  transform: translateX(4px);
 }
 
 /* =========================
@@ -83,16 +146,17 @@
   color: #004a80;
   padding: 0.55rem 1.4rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   font-weight: 600;
   font-size: 0.9rem;
   cursor: pointer;
   white-space: nowrap;
-  transition: background-color 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 .cta:hover {
   background-color: #c4911a;
+  transform: translateY(-2px);
 }
 
 /* =========================
@@ -146,7 +210,7 @@
   color: #004a80;
   padding: 0.6rem 1.4rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   font-weight: 600;
 }
 

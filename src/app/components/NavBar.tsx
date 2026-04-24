@@ -14,74 +14,123 @@ function handleClick() {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [dropdown, setDropdown] = useState<string | null>(null);
 
   return (
-    <nav className={styles.navbar} aria-label="Navegación principal">
-      {/* Logo */}
+    <nav className={styles.navbar}>
+      {/* LOGO */}
       <div className={styles.left}>
         <div className={styles.logoWrapper}>
           <Link href="/">
             <Image
               src="/logo_pravice.png"
-              alt="Pravice - Gestión y cobro de cartera en Colombia"
+              alt="Pravice - Gestión de cartera en Cali"
               fill
               priority
-              sizes="(max-width: 768px) 120px, 160px"
               style={{ objectFit: "contain" }}
             />
           </Link>
         </div>
       </div>
 
-      {/* Menú desktop */}
+      {/* DESKTOP MENU */}
       <ul className={styles.center}>
         <li>
           <Link href="/">Inicio</Link>
         </li>
+
         <li>
           <Link href="/#servicios">Servicios</Link>
         </li>
-        <li>
-          <Link href="/#nosotros">Nosotros</Link>
+
+        {/* PROBLEMAS */}
+        <li
+          className={styles.dropdown}
+          onMouseEnter={() => setDropdown("problemas")}
+          onMouseLeave={() => setDropdown(null)}
+        >
+          <span>Problemas ▾</span>
+
+          {dropdown === "problemas" && (
+            <div className={styles.dropdownMenu}>
+              <Link href="/Problemas/clientes-no-pagan-cali">
+                Clientes no pagar
+              </Link>
+              <Link href="/Problemas/cartera-vencida-cali">
+                Cartera vencida
+              </Link>
+              <Link href="/Problemas/cobrar-deuda-urgente-cali">
+                Cobrar deuda urgente
+              </Link>
+            </div>
+          )}
         </li>
+
+        {/* SECTORES */}
+        <li
+          className={styles.dropdown}
+          onMouseEnter={() => setDropdown("sectores")}
+          onMouseLeave={() => setDropdown(null)}
+        >
+          <span>Sectores ▾</span>
+
+          {dropdown === "sectores" && (
+            <div className={styles.dropdownMenu}>
+              <Link href="/Sectores/cobranza-pymes-cali">Pymes</Link>
+              <Link href="/Sectores/cobranza-inmobiliarias-cali">
+                Inmobiliarias
+              </Link>
+              <Link href="/Sectores/cobranza-clinicas-cali">Clínicas</Link>
+            </div>
+          )}
+        </li>
+
         <li>
           <Link href="/Blog">Blog</Link>
         </li>
+
         <li>
           <Link href="/#contacto">Contacto</Link>
         </li>
       </ul>
 
-      {/* CTA + Hamburger */}
+      {/* CTA */}
       <div className={styles.right}>
         <button className={styles.cta} onClick={handleClick}>
-          Asesoría en cobro de cartera
+          Asesoría inmediata
         </button>
 
-        <button
-          className={styles.menuButton}
-          onClick={() => setOpen(!open)}
-          aria-label="Abrir menú"
-        >
+        <button className={styles.menuButton} onClick={() => setOpen(!open)}>
           ☰
         </button>
       </div>
 
-      {/* Menú mobile */}
+      {/* MOBILE MENU */}
       {open && (
         <div className={styles.mobileMenu}>
-          <Link href="#inicio" onClick={() => setOpen(false)}>
+          <Link href="/" onClick={() => setOpen(false)}>
             Inicio
           </Link>
-          <Link href="#servicios" onClick={() => setOpen(false)}>
+
+          <Link href="/#servicios" onClick={() => setOpen(false)}>
             Servicios
           </Link>
-          <Link href="#nosotros" onClick={() => setOpen(false)}>
-            Nosotros
+
+          <Link href="/problemas/clientes-no-pagan-cali">
+            Clientes no pagan
           </Link>
-          <Link href="#contacto" onClick={() => setOpen(false)}>
-            Contacto
+
+          <Link href="/problemas/cartera-vencida-cali">Cartera vencida</Link>
+
+          <Link href="/problemas/cobrar-deuda-urgente-cali">Cobro urgente</Link>
+
+          <Link href="/sectores/cobranza-pymes-cali">Pymes</Link>
+
+          <Link href="/sectores/cobranza-inmobiliarias-cali">
+            Inmobiliarias
           </Link>
+
+          <Link href="/Blog">Blog</Link>
 
           <button onClick={handleClick}>Solicitar asesoría</button>
         </div>
