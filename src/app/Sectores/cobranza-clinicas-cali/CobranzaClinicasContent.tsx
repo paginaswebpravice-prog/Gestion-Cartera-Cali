@@ -16,7 +16,12 @@ export default function CobranzaClinicasContent() {
           Mejoramos tu flujo de caja y aceleramos el pago de cuentas médicas.
         </p>
 
-        <Link href="/contacto" className={styles.button}>
+        <Link
+          href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+          className={styles.button}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Recuperar cartera clínica
         </Link>
 

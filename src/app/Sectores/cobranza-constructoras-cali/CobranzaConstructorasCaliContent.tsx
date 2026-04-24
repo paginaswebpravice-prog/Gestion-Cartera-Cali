@@ -15,7 +15,12 @@ export default function CobranzaConstructorasContent() {
           estrategias legales especializadas en el sector construcción.
         </p>
 
-        <Link href="/contacto" className={styles.button}>
+        <Link
+          href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+          className={styles.button}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Recuperar cartera de obra
         </Link>
 

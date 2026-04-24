@@ -16,7 +16,12 @@ export default function CobranzaServiciosProfesionalesCaliContent() {
           profesionales independientes y empresas de servicios en Cali.
         </p>
 
-        <Link href="/contacto" className={styles.button}>
+        <Link
+          href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+          className={styles.button}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Recuperar honorarios ahora
         </Link>
 
