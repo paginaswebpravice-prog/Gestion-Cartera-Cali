@@ -68,6 +68,9 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <span className={styles.whatsappTooltip}>
+            💬 Escríbenos ahora y recibe asesoría inmediata
+          </span>
           <span className={styles.icon}>
             <FontAwesomeIcon icon={faWhatsapp} />
           </span>
